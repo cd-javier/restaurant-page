@@ -67,6 +67,7 @@ button:not(.active):hover {
 #content {
   flex: 1;
   padding: 4rem 2rem;
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 
