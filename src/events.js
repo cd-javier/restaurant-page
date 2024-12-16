@@ -7,11 +7,9 @@ const eventPage = [];
 
 const headingWrapper = new Element(0, "text.two-col").createElement();
 const heading = new Element("h2", 0, "Unforgettable Events at the Overlook");
-headingWrapper.appendChild(heading.createElement())
-
-
-
 const textBody = new Element("p", 0, "From timeless celebrations to chillingly unique getaways, the Overlook Hotel offers events that are anything but ordinary. Explore our exclusive experiences and make memories that will last a lifetime—or longer.");
+
+headingWrapper.appendChild(heading.createElement())
 headingWrapper.appendChild(textBody.createElement())
 
 eventPage.push(headingWrapper)
