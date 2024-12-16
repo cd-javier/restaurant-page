@@ -21,7 +21,7 @@ body {
 header {
   background-color: var(--black);
   color: white;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@ button:not(.active):hover {
 
 #content {
   flex: 1;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
@@ -89,12 +89,16 @@ button:not(.active):hover {
   margin: 0;
 }
 
+.text button:hover {
+  background-color: var(--black);
+}
+
 .img {
   width: 100%;
 }
 
 .hero-img {
-  padding-left:0.5rem;
+  padding-left: 0.5rem;
 }
 
 .two-col {
@@ -130,8 +134,37 @@ button:not(.active):hover {
   flex: 1;
 }
 
+.card-body p + p {
+  margin-top: 0;
+}
+
 .card-body button {
   width: 100%;
+}
+
+.text h3 {
+  font-weight: 200;
+}
+
+.text ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.text li {
+  margin-bottom: 1rem;
+}
+
+.text li {
+  display: flex;
+  align-items: baseline;
+}
+
+li span {
+  font-weight: 400;
+  width: 150px;
+  margin-right: 1rem;
 }
 
 footer {
@@ -145,14 +178,35 @@ footer p {
   text-align: center;
 }
 
+.disclaimer {
+  font-size: 0.75rem;
+}
+
+.disclaimer p {
+  font-style: italic;
+}
 
 @media only screen and (max-width: 769px) {
   #content {
     grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  header nav {
+    gap: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-weight: 200;
   }
 
   .two-col {
     grid-column-end: auto;
   }
 
+  .card {
+    padding: 0;
+  }
 }
