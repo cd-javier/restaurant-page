@@ -37,6 +37,7 @@ header h1 {
 header h1,
 header p {
   margin: 0;
+  text-align: center;
 }
 
 header nav {
@@ -92,6 +93,10 @@ button:not(.active):hover {
   width: 100%;
 }
 
+.hero-img {
+  padding-left:0.5rem;
+}
+
 .two-col {
   grid-column-end: span 2;
 }
@@ -107,6 +112,11 @@ button:not(.active):hover {
 }
 
 .card-body {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
   background-color: white;
   padding: 1rem;
   border-radius: 0 0 4px 4px;
@@ -114,6 +124,10 @@ button:not(.active):hover {
 
 .card-body h3 {
   margin: 0;
+}
+
+.card-body p {
+  flex: 1;
 }
 
 .card-body button {
@@ -129,4 +143,16 @@ footer {
 footer p {
   margin: 0.5rem;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 769px) {
+  #content {
+    grid-template-columns: 1fr;
+  }
+
+  .two-col {
+    grid-column-end: auto;
+  }
+
 }
