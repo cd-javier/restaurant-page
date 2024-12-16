@@ -7,12 +7,16 @@ const eventPage = [];
 
 const headingWrapper = new Element(0, "text.two-col").createElement();
 const heading = new Element("h2", 0, "Unforgettable Events at the Overlook");
-const textBody = new Element("p", 0, "From timeless celebrations to chillingly unique getaways, the Overlook Hotel offers events that are anything but ordinary. Explore our exclusive experiences and make memories that will last a lifetime—or longer.");
+const textBody = new Element(
+  "p",
+  0,
+  "From timeless celebrations to chillingly unique getaways, the Overlook Hotel offers events that are anything but ordinary. Explore our exclusive experiences and make memories that will last a lifetime—or longer."
+);
 
-headingWrapper.appendChild(heading.createElement())
-headingWrapper.appendChild(textBody.createElement())
+headingWrapper.appendChild(heading.createElement());
+headingWrapper.appendChild(textBody.createElement());
 
-eventPage.push(headingWrapper)
+eventPage.push(headingWrapper);
 
 // Function to create cards more easily
 function createCard(imgSrc, heading, body1, body2) {
@@ -60,7 +64,7 @@ const cardTwo = createCard(
 
 const cardThree = createCard(
   cardThreeImgSrc,
-  "Relaxing Writers Retreat",
+  "All Play and No Work Package",
   "Winter at the Overlook Hotel is nothing short of unforgettable. Get ready to embrace the thrill of being snowed in with activities that range from braving the blizzards to navigating our world-famous hedge maze—just watch your step, it’s easy to lose track of time (and yourself).",
   "Cozy up by the fire with a warm drink, explore the hotel’s many intriguing hallways (some of which you might not remember from your last visit), or simply let the majestic, snow-covered scenery take your breath away. Feeling adventurous? The Overlook offers unique winter experiences that will stick with you forever—sometimes in ways you never expected."
 );
