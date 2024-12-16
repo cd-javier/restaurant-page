@@ -18,15 +18,24 @@ import { contactPage } from "./contact";
   function renderHome() {
     wrapper.innerHTML = "";
     appendArr(wrapper, homePage);
+    homeBtn.classList.add("active")
+    eventsBtn.classList.remove("active")
+    contactBtn.classList.remove("active")
   }
-
+  
   function renderEvents() {
     wrapper.innerHTML = "";
     appendArr(wrapper, eventPage);
+    homeBtn.classList.remove("active")
+    eventsBtn.classList.add("active")
+    contactBtn.classList.remove("active")
   }
-
+  
   function renderContact() {
     wrapper.innerHTML = "";
     appendArr(wrapper, contactPage);
+    homeBtn.classList.remove("active")
+    eventsBtn.classList.remove("active")
+    contactBtn.classList.add("active")
   }
 })();
